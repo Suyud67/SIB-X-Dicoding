@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+.container-header {
+  background-color: #8a2be2;
+  margin-bottom: 1rem;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header h1 {
+  font-size: 2.3em;
+}
+/* akhir header */
+
+/* form */
+.container-form {
+  width: 60%;
+  margin: auto;
+  border: 6px solid #8a2be2;
+  border-radius: 13px;
+}
+
+#form {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.data-form {
+  margin-bottom: 1rem;
+}
+
+.data-form input[type='text'],
+.data-form input[type='date'] {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  outline: none;
+}
+
+.isCompleted {
+  display: flex;
+  align-items: center;
+}
+
+#isCompleted {
+  margin-left: 4px;
+}
+
+.btn-submit {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 2px solid #8a2be2;
+  background: none;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.btn-submit:hover {
+  background-color: #8a2be2;
+  color: #fff;
+}
+/* akhir form */
+
+/* search book */
+.search {
+  width: 60%;
+  margin: 1rem;
+}
+
+#searchBook {
+  width: 40%;
+  padding: 7px 5px;
+  outline: none;
+}
+
+#btnSearch {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+.bookSearch {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid #8a2be2;
+}
+
+/* akhir book */
+
+/* section book */
+.container-book {
+  width: 80%;
+  margin: 1rem auto;
+  border: 5px solid #8a2be2;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.uncomplete-books,
+.completed-books {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  /* width: 50%; */
+  margin: auto 10px;
+  padding: 1rem 0;
+  border-radius: 10px;
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 3px solid #8a2be2;
+}
+
+.desc-book {
+  word-break: break-all;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #8a2be2;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GerakCepat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- fontAwesome, googleFont -->
+    <script src="https://kit.fontawesome.com/181ab92262.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="header-nav">
+        <h1>GerakCepat</h1>
+      </div>
+      <nav>
+        <ul class="list-item">
+          <li class="item">
+            <a href="#" class="link-item">Home</a>
+          </li>
+          <li class="item">
+            <a href="#about" class="link-item">About</a>
+          </li>
+          <li class="item">
+            <a href="#service" class="link-item">Service</a>
+          </li>
+          <li class="item">
+            <a href="#contact" class="link-item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </header>
+    <!-- akhir navbar -->
+
+    <main>
+      <div class="jumbotron-main">
+        <div class="desc-main">
+          <h2>GerakCepat</h2>
+          <p>Siap Membantu Mu Di Waktu Mepet</p>
+          <a href="#" class="btn-apk">Download GerakCepat</a>
+        </div>
+        <div class="main-img">
+          <img src="../asset/image/bg-jumbotron.png" alt="courier-img" class="img-main" />
+        </div>
+      </div>
+      <div id="content">
+        <article class="about" id="about">
+          <div class="about-content">
+            <div class="about-img">
+              <img
+                src="https://img.freepik.com/free-vector/illustrated-delivery-service-with-masks-concept-pack_23-2148502130.jpg?t=st=1654575051~exp=1654575651~hmac=f4307605e0bd38a9e64872196b3e5d38307ac38b12608d2358e7927e7804ae29&w=740"
+                alt="about-img"
+                class="img-about"
+              />
+            </div>
+            <div class="about-desc">
+              <h2>About GerakCepat</h2>
+              <p>GerakCepat merupakan sebuah layanan antar barang. Dengan layanan unggulannya yaitu Penjemputan Barang Langsung (penjemputan barang langsung ke rumah pelanggan), untuk mencobanya bisa diakses melalui aplikasi GerakCepat.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="service" id="service">
+          <div class="header-service">
+            <h2>Our Service</h2>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-img">
+                <i class="fa-solid fa-truck-fast fa-5x img-card"></i>
+              </div>
+              <div class="card-desc">
+                <h3>Pengiriman Cepat, Murah, dan Aman</h3>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <i class="fa-solid fa-money-bills fa-5x img-card"></i>
+              </div>
+              <div class="card-desc">
+                <h3>Menyediakan Layanan Pembayaran Kredit, Beli Pulsa Prabayar, Token Listrik, Dan Pembayaran Lainnya Lewat Aplikasi</h3>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <i class="fa-solid fa-boxes-packing fa-5x img-card"></i>
+              </div>
+              <div class="card-desc">
+                <h3>Menyediakan Layanan Jemput Paket</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="profile-contact" id="contact">
+        <div class="header-profile">
+          <h2>Profile & Form Contact</h2>
+        </div>
+        <div class="container-procontact">
+          <section class="profile">
+            <div class="profile-img">
+              <img src="../asset/image/profile.jpg" alt="profile" class="img-profile" />
+            </div>
+            <div class="data-diri">
+              <h3>Nama</h3>
+              <p>Suyud Setiawan Al Arif</p>
+              <h3>Umur</h3>
+              <p>20 Tahun</p>
+              <h3>Bahasa Pemrograman Favorit</h3>
+              <p>Javascript</p>
+            </div>
+          </section>
+          <section class="contact">
+            <form action="#">
+              <div class="nama">
+                <label for="nama">Nama: </label>
+                <input type="text" name="nama" id="nama" placeholder="Nurdin" />
+              </div>
+              <div class="email">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="joko@gmail.com" />
+              </div>
+              <div class="pesan">
+                <label for="pesan">Pesan: </label>
+                <textarea name="pesan" id="pesan" cols="30" rows="5s" placeholder="Hello There"></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Kirim</button>
+            </form>
+          </section>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>Copyright 2022 Create With Love By Suyud Setiawan</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

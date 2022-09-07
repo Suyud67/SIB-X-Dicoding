@@ -1,0 +1,293 @@
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* akhir reset */
+
+/* navbar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #86b2ef;
+  color: #f6f6f6;
+}
+
+.list-item {
+  display: flex;
+}
+
+.link-item {
+  justify-content: center;
+  margin-left: 2rem;
+  font-size: 1.2em;
+  position: relative;
+  color: #f6f6f6;
+}
+
+.link-item::before {
+  content: '';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  background-color: #f6f6f6;
+  bottom: -2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-item:hover::before {
+  width: 100%;
+  right: 0;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: #f6f6f6;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* akhir navbar */
+
+/* main */
+.jumbotron-main {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url('https://img.freepik.com/free-vector/white-background-with-wavy-lines_23-2149124448.jpg?t=st=1654574282~exp=1654574882~hmac=6d135a05ece3c4a38ecf217712cb64067c88ed52e746636bd7760355e0d31721&w=740');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-img {
+  width: 50%;
+}
+
+.img-main {
+  width: 100%;
+}
+
+.desc-main h2 {
+  font-size: 3em;
+}
+
+.desc-main p {
+  font-size: 1.3em;
+  position: relative;
+}
+
+.desc-main .btn-apk {
+  display: inline-block;
+  background-color: #588ddd;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in;
+}
+
+.desc-main .btn-apk:hover {
+  background-color: #86b2ef;
+}
+
+.desc-main p::before {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #fa9746;
+  position: absolute;
+  bottom: -4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.desc-main p:hover::before {
+  width: 100%;
+  right: 0;
+}
+/* akhir main */
+
+/* about */
+.about {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 4px 4px 6px 2px gray;
+}
+
+.about-img {
+  width: 70%;
+}
+
+.img-about {
+  width: 100%;
+}
+
+.about-desc h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+.about-desc p {
+  font-size: 1.2em;
+}
+/* akhir about */
+
+/* service */
+.service {
+  background-color: #86b2ef;
+  padding: 1rem;
+}
+
+.header-service {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 30%;
+  border-radius: 14px;
+  box-shadow: 4px 4px 6px 2px gray;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: none;
+  top: 4px;
+  left: 4px;
+}
+
+.card-img {
+  margin-bottom: 1rem;
+}
+
+.card-img .img-card {
+  width: 100%;
+}
+
+/* akhir service */
+
+/* profile & contact */
+.profile-contact {
+  width: 100%;
+  background-color: #fa9746;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.header-profile {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40%;
+  margin-right: 1rem;
+}
+
+.img-profile {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.data-diri h3 {
+  position: relative;
+  font-size: 1.4em;
+  margin-bottom: 3px;
+  text-decoration: underline;
+}
+
+.data-diri p {
+  font-size: 1.3em;
+}
+
+.container-procontact {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  width: 50%;
+  overflow: hidden;
+}
+
+.contact input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+.btn-submit {
+  border: 3px solid #f6f6f6;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: none;
+  border-radius: 14px;
+  font-weight: 700;
+  color: #f6f6f6;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #f6f6f6;
+  color: #000;
+}
+/* akhir profile & contact */
+
+/* footer */
+footer {
+  background-color: #86b2ef;
+  text-align: center;
+  padding: 1rem 0;
+}
+/* akhir footer */

@@ -1,0 +1,176 @@
+/* query hp */
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .list-item {
+    flex-direction: column;
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 100%;
+    left: -100%;
+    top: 4.5rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+  }
+
+  .list-item.active {
+    top: 4.5rem;
+    left: 0;
+  }
+
+  .item {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .link-item {
+    color: #000;
+  }
+
+  .line {
+    transition: all 0.3s ease-in;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /* main */
+  .jumbotron-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desc-main {
+    order: 2;
+  }
+
+  .main-img {
+    width: 100%;
+    order: 1;
+  }
+
+  .desc-main h2 {
+    font-size: 2.2em;
+  }
+
+  .desc-main p {
+    font-size: 1.4em;
+  }
+  /* akhir main */
+
+  /* about */
+  .about {
+    width: 80%;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .img-about {
+    width: 100%;
+  }
+
+  .about-desc h2 {
+    text-align: center;
+  }
+  /* akhir about */
+
+  /* cards */
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  /* akhir cards */
+
+  /* form */
+  .container-procontact {
+    flex-direction: column;
+  }
+
+  .profile {
+    margin-bottom: 1.6rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+  .data-diri h3 {
+    font-size: 1.2em;
+  }
+
+  .contact {
+    width: 100%;
+  }
+  /* akhir form */
+}
+
+/* query tab */
+@media screen and (max-width: 900px) {
+  /* cards */
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  /* akhir cards */
+
+  /* about */
+  .about-img {
+    width: 100%;
+  }
+
+  .img-about {
+    width: 100%;
+  }
+  /* akhir about */
+
+  /* form */
+  .container-procontact {
+    flex-direction: column;
+  }
+
+  .profile {
+    margin-bottom: 1.6rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+  .data-diri h3 {
+    font-size: 1.2em;
+  }
+
+  .contact {
+    width: 100%;
+  }
+  /* akhir form */
+}

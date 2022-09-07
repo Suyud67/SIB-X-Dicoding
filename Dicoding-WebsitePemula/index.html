@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://kit.fontawesome.com/df3b53d485.js" crossorigin="anonymous"></script>
+    <title>Bookshelf-app</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-header">
+      <div class="header">
+        <h1>Bookshelf App</h1>
+      </div>
+    </div>
+    <!-- akhir header -->
+
+    <!-- form section -->
+    <div class="container-form">
+      <form action="post" id="form">
+        <div class="judul data-form">
+          <label for="judul">Judul</label>
+          <input type="text" name="judul" id="judul" placeholder="Masukkan Judul Buku Anda" required autocomplete="off" />
+        </div>
+        <div class="pembuat data-form">
+          <label for="pembuat">Penulis</label>
+          <input type="text" name="pembuat" id="pembuat" placeholder="Nama Penulis" required autocomplete="off" />
+        </div>
+        <div class="year data-form">
+          <label for="year">Tahun Terbit</label>
+          <input type="date" name="year" id="year" required />
+        </div>
+        <div class="isCompleted data-form">
+          <label for="isCompleted">Sudah Selesai Baca?</label>
+          <input type="checkbox" name="isCompleted" id="isCompleted" />
+        </div>
+        <input type="submit" value="submit" class="btn-submit" />
+      </form>
+    </div>
+    <!-- akhir form -->
+
+    <!-- search book -->
+    <div class="container-book">
+      <div class="header-search">
+        <h2>Search Book</h2>
+      </div>
+      <div class="search">
+        <input type="text" name="searchBook" id="searchBook" />
+        <button type="submit" id="btnSearch">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="result"></div>
+    </div>
+    <!-- akhir search book -->
+
+    <!-- section book belum selesai -->
+    <div class="container-book">
+      <div class="header-book">
+        <h2>Buku yang belum selesai dibaca</h2>
+      </div>
+      <div class="uncomplete-books"></div>
+    </div>
+    <!-- section book belum selesai -->
+
+    <!-- section book selesai selesai -->
+    <div class="container-book">
+      <div class="header-book">
+        <h2>Buku yang sudah selesai dibaca</h2>
+      </div>
+      <div class="completed-books"></div>
+    </div>
+    <!-- section book selesai selesai -->
+
+    <!-- footer -->
+    <footer>
+      <p><i class="fa fa-copyright"></i> Copyright 2022 Created With <i class="fa fa-heart" style="color: #ff6666"></i> By <a href="https:\\instagram.com\setiawan_alarif" target="_blank">Suyud Setiawan</a></p>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
